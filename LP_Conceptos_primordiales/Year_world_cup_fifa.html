@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - YEAR WORLD CUP FIFA </h1>
+
+<!--<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var yearWorld = 1930;
+
+    alert("Hubo mundial de la FIFA en el año " + yearWorld);
+
+    yearWorld = yearWorld + 4;
+    alert("Hubo mundial de la FIFA en el año " + yearWorld);
+
+    yearWorld = yearWorld + 4;
+    alert("Hubo mundial de la FIFA en el año " + yearWorld);
+
+</script>
+-->
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var yearWorld = 1930;
+    var limite = parseInt(prompt("Ingrese el año límite para calcular"))
+
+    //alert("Hubo mundial de la FIFA en el año " + yearWorld);
+
+    while(yearWorld <= 2022){
+
+        imprimir("Hubo mundial de la FIFA en el año " + yearWorld);
+        yearWorld = yearWorld + 4;
+        
+    }
+
+    imprimir("END")
+
+
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - SHOW EVEN NUMBERS </h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var number_entered = parseInt(prompt("Ingrese un número"));
+
+    var counter = 2;
+
+    var eve_numbers = 0;
+
+    imprimir("Los números pares menores o iguales que " + number_entered + " son: ")
+
+
+    while(counter <= number_entered){
+
+        eve_numbers = counter;
+        imprimir(eve_numbers);
+        counter = counter + 2;
+
+    }
+
+    imprimir("END")
+
+
+</script>

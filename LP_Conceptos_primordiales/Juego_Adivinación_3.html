@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>"); 
+
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var number_thought = Math.round(Math.random()*10); // 💡
+
+    var tries = 3;
+
+    var counter = 1;
+
+
+    while (counter <= tries){
+
+
+        var number_thrown = parseInt(prompt("Ingrese un numero entre 0 - 10")) // 🎲
+
+        if (number_thought == number_thrown){
+
+           alert("Usted acertó, en el intento " + counter + " el numero pensado era " + number_thought);
+           break;
+
+        }
+
+        else {
+
+           alert("Usted erró");
+
+        }
+
+        counter++;
+
+
+    }
+
+    if (number_thought == number_thrown){
+
+        imprimir("Usted acertó, en el intento " + counter + " el numero pensado era " + number_thought);
+
+    }
+
+    else {
+
+        imprimir("Usted erró, el número pensado era " + number_thought);
+
+    }
+
+    imprimir("END")
+
+
+</script>
+
+// https://github.com/alura-cursos/logica_programacion_parte2/tree/aula2
