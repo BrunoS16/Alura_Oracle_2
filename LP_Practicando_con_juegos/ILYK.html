@@ -1,0 +1,55 @@
+<canvas width="600" height="400"> </canvas>
+
+
+<script>
+	var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.moveTo(50, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(70, 200);
+    pincel.lineTo(70, 50);
+    pincel.fill();
+
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.moveTo(90, 50);
+    pincel.lineTo(90, 200);
+    pincel.lineTo(110, 200);
+    pincel.lineTo(170, 200);
+    pincel.lineTo(170, 180);
+    pincel.lineTo(110, 180);
+    pincel.lineTo(110, 50);
+    pincel.fill();
+
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.moveTo(190, 50);
+    pincel.lineTo(210, 100);
+    pincel.lineTo(210, 200);
+    pincel.lineTo(230, 200);
+    pincel.lineTo(230, 100); // OK
+    pincel.lineTo(250, 50); 
+    pincel.lineTo(230, 50);
+    pincel.lineTo(220, 90);
+    pincel.lineTo(210, 50);
+    pincel.fill();
+
+    pincel.fillStyle = "purple";
+    pincel.beginPath();
+    pincel.moveTo(290, 50);
+    pincel.lineTo(290, 200);
+    pincel.lineTo(310, 200);
+    pincel.lineTo(310, 125); // OK
+    pincel.lineTo(340, 200); 
+    pincel.lineTo(360, 200); // 
+    pincel.lineTo(330, 125);
+    pincel.lineTo(360, 50);
+    pincel.lineTo(340, 50);
+    pincel.lineTo(310, 125);
+    pincel.lineTo(310, 50);
+    pincel.fill();
+
+</script>
